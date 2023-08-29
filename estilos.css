@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--white: hsl(0, 0%, 100%);
+--lightGray: hsl(214, 24%, 79%);
+--grayishBlue: hsl(201, 60%, 82%);
+--darkBlue: hsl(218, 44%, 22%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--grayishBlue);
+}
+
+.principal{
+    width: 260px;
+    height: 435px;
+    margin: 70px auto;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: var(--white);
+    box-shadow: 0px 6px 7px 3px hsl(218, 44%, 22%);
+}
+.imgContainer{
+    margin-top: 8px;
+}
+.imgContainer img{
+    height: 260px;
+    background-size: cover;
+    border-radius: 15px;
+  
+}
+h1{
+    color: var(--darkBlue);
+}
+
+.titulo{
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.parrafo{
+    color: var(--lightGray);
+    display: flex;
+    text-align: center;
+    margin-top: 1em;
+}
+p{
+    font-size: 15px;
+}
+footer{
+    font-size: 15px; 
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+@media(min-width:375px){
+
+    .principal{
+        width: 285px;
+        height: 450px;
+    }
+
+    .imgContainer img{        
+        display: block;
+        margin: auto;
+    }
+
+    .parrafo{
+        color: var(--lightGray);
+        display: flex;
+        text-align: center;
+        margin-top: 2em;
+    }
+    p{
+        font-size: 16px;
+    }
+}
